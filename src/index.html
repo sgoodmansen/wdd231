@@ -11,7 +11,7 @@
     <p class="disclaimer">
       This is not a real NPS website. It is an educational exercise. If you
       landed here by accident, to find the real website visit
-      <a href="parkUrl">[park name]</a>
+      <a href="https://www.nps.gov/yell/index.htm">Yellowstone National Park</a>
     </p>
     <div class="skip-links" aria-label="short-cut links" role="navigation">
       <ul>
@@ -41,26 +41,36 @@
         </li>
       </ul>
     </div>
+
     <header>
       <section class="global-header">
-        <a href="index.html" class="site-title"
-          ><span class="logo" role="presentation"></span>
-          <span>National Park Service</span></a
-        >
+        <!-- NPS logo and text -->
+        <a href="index.html" class="site-title">
+          <span class="logo" role="presentation"></span>
+          <h1>National Park Service</h1>
+        </a>
+        
         <div class="global-header__right">
+
+          <!-- Search -->
           <a class="search-icon" href="#park-footer">
             <svg class="icon">
               <use xlink:href="/images/sprite.symbol.svg#search"></use>
             </svg>
             <span class="visually-hidden">Search</span>
           </a>
+
+          <!-- Menu -->
           <button id="global-nav-toggle">
             <svg class="icon">
               <use xlink:href="/images/sprite.symbol.svg#menu"></use>
             </svg>
             <span class="visually-hidden">Open</span> Menu
           </button>
+
         </div>
+
+        <!-- Menu Navigation -->
         <nav class="global-nav">
           <h2 class="global-nav__section-heading">Explore this Park</h2>
           <ul class="global-nav__list">
@@ -79,19 +89,78 @@
             </li>
           </ul>
         </nav>
+
       </section>
+
       <section id="park-header">
-        <a href="#">
-          <span>Info</span>
-          <svg class="icon" role="presentation" focusable="false">
-            <use xlink:href="/images/sprite.symbol.svg#info"></use>
-          </svg>
-        </a>
-        <svg class="icon" role="presentation" focusable="false">
-          <use xlink:href="/images/sprite.symbol.svg#alert"></use>
-        </svg>
+        <!-- hero image -->
+          <div class="park-hero">
+            <img src="images/3C7D5920-1DD8-B71B-0B83F012ED802CEA.webp" alt="Grand Prismatic Spring displaying a rainbow of colors">
+
+            <!-- Park name and location -->
+            <div class="park-title">
+              <h1>Yellowstone</h1>
+              <div>
+                <span>National Park</span> 
+                <span> ID, MT, WY</span>
+              </div>  
+            </div>
+          </div>
+        
+        <!-- Park navigation -->
+          <nav id="local-nav" class="park-nav">
+            <!-- Information logo -->
+             <ul>
+              <li>
+                <a href="#">
+                  <span>Info</span>
+                  <svg class="icon" role="presentation" focusable="false">
+                    <use xlink:href="/images/sprite.symbol.svg#info"></use>
+                  </svg>
+              </a>
+              </li>
+              <li>
+                <!-- Alerts logo -->
+                <a href="#">
+                  <span>Alerts</span>
+                  <svg class="icon" role="presentation" focusable="false">
+                    <use xlink:href="/images/sprite.symbol.svg#alert"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <!-- Maps logo -->
+                <a href="#">
+                  <span>Maps</span>
+                  <svg class="icon" role="presentation" focusable="false">
+                    <use xlink:href="/images/sprite.symbol.svg#location"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <!-- Calendar logo -->
+                <a href="#">
+                  <span>Calendar</span>
+                  <svg class="icon" role="presentation" focusable="false">
+                    <use xlink:href="/images/sprite.symbol.svg#calendar"></use>
+                  </svg>
+                </a> 
+              </li>
+              <li>
+                <!-- Fees logo -->
+                <a href="#">
+                  <span>Fees</span>
+                  <svg class="icon" role="presentation" focusable="false">
+                    <use xlink:href="/images/sprite.symbol.svg#fee-22"></use>
+                  </svg>
+                </a>
+              </li>
+             </ul>
+          </nav>
       </section>
     </header>
+
+
     <main id="main"></main>
     <footer id="park-footer"></footer>
   </body>
