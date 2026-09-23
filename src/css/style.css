@@ -147,7 +147,7 @@ a:hover {
   color: white;
 }
 
-.site-title h1 {
+.site-title__text{
   font-size: 1rem;
   margin: 0 0 0 0.3em;
 }
@@ -289,6 +289,67 @@ a:hover {
   height: 24px;
 }
 
+/* Main Body */
+.intro,
+.info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+}
+
+.media-card {
+  /* border: 1px solid var(--bs-gray-300); */
+  background-color: white;
+}
+
+.media-card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display:block;
+}
+
+.media-card h2,
+.media-card p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.media-card p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.media-card a {
+  text-decoration: none;
+}
+
+/* Footer */
+#park-footer {
+  background-color: var(--bs-black);
+  background-image: url('../images/topo_pattern.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+.contact h2,
+.contact h3,
+.contact p {
+  margin-top:0;
+}
+
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Utility styles */
 
 .visually-hidden {
@@ -307,4 +368,10 @@ a:hover {
 svg {
   /* background-color: var(--bs-black); */
   fill: white;
+}
+
+@media (max-width: 700px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
 }
