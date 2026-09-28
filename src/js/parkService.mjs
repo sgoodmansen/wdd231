@@ -77,25 +77,25 @@ const park = {
     },
     {
       credit: "NPS/Jim Peaco",
-      title: "Aurum Geyser",
+      title: "Driving",
       altText:
-        "A crowd of people standing along a wooden boardwalk watches a geyser erupt.",
-      caption: "Aurum Geyser erupting",
-      url: "https://www.nps.gov/common/uploads/structured_data/3C7D2FBB-1DD8-B71B-0BED99731011CFCE.jpg"
+        "Cars traveling on a road with a mountain range in the background",
+      caption: "Driving through the park",
+      url: "https://www.nps.gov/common/uploads/grid_builder/yell/crop16_9/610D997A-D1EE-EE2E-B08F7C9E789EEDB3.jpg?width=423&quality=80&mode=crop&format=webp"
     },
     {
       credit: "NPS/Diane Renkin",
-      title: "Black Pool",
-      altText: "A visitor stands on a boardwalk near a hot spring and a lake.",
-      caption: "Black Pool at the West Thumb Geyser Basin",
-      url: "https://www.nps.gov/common/uploads/structured_data/3C7D383B-1DD8-B71B-0BEC4A4D6BDF7CAD.jpg"
+      title: "West Thumb Visitor Center at Night",
+      altText: "Night sky showing the milky way galaxy above the visitor center at West Thumb",
+      caption: "Milky Way galaxy above the West Thumb visitor center",
+      url: "https://www.nps.gov/common/uploads/grid_builder/yell/crop16_9/42892E15-AE6A-81EC-D35112D59E39F99C.jpg?width=423&quality=80&mode=crop&format=webp"
     },
     {
       credit: "NPS/Jim Peaco",
-      title: "Beehive Geyser",
-      altText: "People on a wooden boardwalk watch a geyser erupt.",
-      caption: "Visitors to the Upper Geyser Basin watch Beehive Geyser erupt.",
-      url: "https://www.nps.gov/common/uploads/structured_data/3C7D334F-1DD8-B71B-0B108C7771F4E854.jpg"
+      title: "Yellowstone Rocks",
+      altText: "Rainbow near the cliff edge of Yellowstone mountin",
+      caption: "Rainbow near the cliff edge of Yellowstone mountin",
+      url: "https://www.nps.gov/common/uploads/grid_builder/yell/crop16_9/619AB9C3-DA87-B968-87C2256D544EBE26.jpg?width=423&quality=80&mode=crop&format=webp"
     },
     {
       credit: "NPS/Jim Peaco",
@@ -183,19 +183,19 @@ export const parkInfoLinks = [
   {
     name: "Current Conditions &#x203A;",
     link: "conditions.html",
-    image: park.images[0].url,
+    image: park.images[3].url,
     description: "See what conditions to expect in the park before leaving on your trip!"
   },
   {
     name: "Fees and Passes &#x203A;",
     link: "fees.html",
-    image: park.images[0].url,
+    image: park.images[1].url,
     description: "Learn about the fees and passes that are available."  
   },
   {
     name: "Visitor Centers &#x203A;",
     link: "visitor_centers.html",
-    image: park.images[0].url,
+    image: park.images[2].url,
     description: "Learn about the visitor centers in the park"  
   }
 ];
