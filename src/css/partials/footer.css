@@ -1,0 +1,19 @@
+/* Footer */
+#park-footer {
+  background-color: var(--bs-black);
+  background-image: url('../images/topo_pattern.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+.contact h2,
+.contact h3,
+.contact p {
+  margin-top:0;
+}
+
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+}
