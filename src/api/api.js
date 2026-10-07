@@ -11,6 +11,11 @@ async function getJSON(endpoint) {
 async function getClimbingParks() {
   const data = await getJSON("activities/parks?q=climbing");
   const parks = data.data[0].parks;
+
+  //   const idahoParks = parks.filter((park) => {
+  //     return park.states.includes("ID");
+  //   });
+
   displayParks(parks);
 }
 
