@@ -10,9 +10,7 @@ async function getJson(url) {
   };
   let data = {};
 
-  const response = await fetch(
-    baseUrl + "parks" + "?parkCode=grca", options
-  );
+  const response = await fetch(baseUrl + url, options);
 
   //check to make sure the response was ok.
   if (response.ok) {
@@ -25,9 +23,21 @@ async function getJson(url) {
 }
 
 export async function getParkData() {
-  const parkData = await getJson("parks?parkcode=yell");
+  const parkData = await getJson("parks?parkCode=yell");
 
   return parkData.data[0];
+}
+
+export async function getParkAlerts(parkCode) {
+  const parkAlerts = await getJson(`alerts?parkCode=${parkCode}`);
+
+  return parkAlerts.data;
+}
+
+export async function getVisitorCenterData(parkCode) {
+  const parkVisitorCenter = await getJson(`visitorcenters?parkCode=${parkCode}`);
+
+  return parkVisitorCenter.data;
 }
 
 const park = {
