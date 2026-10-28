@@ -23,7 +23,7 @@ export function mediaCardTemplate(info){
 }
 
 export function alertTemplate(alert) {
-  let alertType = "";
+  let alertType;
 
   if (alert.category === "Park Closure") {
     alertType = "closure";

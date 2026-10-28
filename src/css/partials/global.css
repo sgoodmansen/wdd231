@@ -78,6 +78,7 @@ a:hover {
 /* Global Header */
 .global-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: var(--bs-black);
@@ -95,7 +96,14 @@ a:hover {
 }
 
 .global-nav {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  flex-basis: 100%;
+  transition: max-height 0.4s ease;
+}
+
+.global-nav.show {
+  max-height: 500px;
 }
 
 .global-header__right {
@@ -118,6 +126,20 @@ a:hover {
 
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.global-nav__toggle--open {
+  display: none;
+}
+
+/* Hide Menu when navigation is open */
+#global-nav-toggle[aria-expanded="true"] .global-nav__toggle--closed {
+  display: none;
+}
+
+/* Show Close when navigation is open */
+#global-nav-toggle[aria-expanded="true"] .global-nav__toggle--open {
+  display: block;
 }
 
 .search-icon {

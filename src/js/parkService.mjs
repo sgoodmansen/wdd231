@@ -8,7 +8,7 @@ async function getJson(url) {
       "X-Api-Key": apiKey
     }
   };
-  let data = {};
+  let data;
 
   const response = await fetch(baseUrl + url, options);
 
