@@ -1,6 +1,7 @@
 import { getParkData, getParkAlerts, getVisitorCenterData } from "./parkService.mjs";
 import { activityTemplate, alertTemplate, visitorCenterTemplate } from "./templates.mjs";
 import setHeaderFooter from "./setHeaderFooter.mjs";
+import initNavigation from "./navigation.mjs";
 import "../css/style.css";
 import "../css/conditions.css";
 
@@ -36,4 +37,5 @@ async function init(){
   setActivities(parkData.activities);
 }
 
+initNavigation();
 init();
